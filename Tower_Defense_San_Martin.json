@@ -21,7 +21,7 @@
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "Tower_Defense_San_Martin",
-    "description": "A tower defense game example that shows users how to select, deselect, and purchase towers. Create instances of enemies using arrays, and moving enemies along a path using their own object arrays and point objects in scene.",
+    "description": "",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -582,6 +582,24 @@
         "name": "assets\\assets_CañonDeMIerda2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Fama.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Fama.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -701,8 +719,8 @@
           "name": "GoldText",
           "persistentUuid": "3d58e379-5271-4013-becc-31c5756b438c",
           "width": 480,
-          "x": 288,
-          "y": 0,
+          "x": 873,
+          "y": 18,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -965,6 +983,22 @@
           "x": 0,
           "y": 0,
           "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 65,
+          "layer": "",
+          "name": "Fama",
+          "persistentUuid": "8e2851e4-073c-494a-bfc2-0b98c53fabd4",
+          "width": 64,
+          "x": 800,
+          "y": 10,
+          "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1255,7 +1289,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Fama: 0",
+          "string": ":0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 40,
@@ -1696,6 +1730,67 @@
               "width": 256
             }
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Fama",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Fama.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 4
+                          },
+                          {
+                            "x": 107,
+                            "y": 4
+                          },
+                          {
+                            "x": 107,
+                            "y": 112
+                          },
+                          {
+                            "x": 5,
+                            "y": 112
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -1807,7 +1902,7 @@
               "parameters": [
                 "GoldText",
                 "=",
-                "\"Gold: \" + ToString(Variable(Gold))"
+                "ToString(Variable(Gold))"
               ]
             }
           ]
