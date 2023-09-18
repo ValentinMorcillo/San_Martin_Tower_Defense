@@ -528,6 +528,60 @@
         "name": "Tower Defense 1 thumbnail 2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/EspañolMalo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\EspañolMalo.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/CañonDeMIerda1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/CañonDeMIerda1.png\",\"extension\":\".png\"}",
+        "name": "assets\\CañonDeMIerda1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_CañonDeMIerda1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\CañonDeMIerda1",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_CañonDeMIerda2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\CañonDeMIerda2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_CañonDeMIerda2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\assets_CañonDeMIerda2.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -564,7 +618,7 @@
           "name": "Tiles",
           "objects": [
             {
-              "name": "TowerHead1"
+              "name": "Canon"
             },
             {
               "name": "Road"
@@ -734,7 +788,7 @@
           "customSize": false,
           "height": 0,
           "layer": "UI",
-          "name": "NextWaveButton",
+          "name": "Boton_prox_oleada",
           "persistentUuid": "f5060be5-5e9f-4809-bae0-89baabb1eb27",
           "width": 0,
           "x": 1056,
@@ -938,7 +992,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Tower1_Icon.png",
+                      "image": "assets\\assets_CañonDeMIerda2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1025,7 +1079,7 @@
               "height": 140,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Tower1_Icon.png",
+              "texture": "assets\\assets_CañonDeMIerda2.png",
               "tiled": true,
               "topMargin": 0,
               "width": 120
@@ -1035,7 +1089,7 @@
               "height": 140,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Tower1_Icon.png",
+              "texture": "assets\\assets_CañonDeMIerda2.png",
               "tiled": true,
               "topMargin": 0,
               "width": 120
@@ -1060,7 +1114,7 @@
               "height": 140,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "assets\\Tower1_Icon.png",
+              "texture": "assets\\assets_CañonDeMIerda2.png",
               "tiled": true,
               "topMargin": 0,
               "width": 120
@@ -1070,49 +1124,7 @@
         {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
-          "name": "TowerBase",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets\\TowerBase.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 64,
-                        "y": 64
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "TowerHead1",
+          "name": "Canon",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -1152,16 +1164,17 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\CañonDeMIerda1",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\TowerHead1.png",
+                      "image": "assets\\CañonDeMIerda2",
                       "points": [
                         {
                           "name": "BulletPoint",
@@ -1242,7 +1255,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Gold: 0",
+          "string": "Fama: 0",
           "font": "",
           "textAlignment": "left",
           "characterSize": 40,
@@ -1264,7 +1277,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Left click on icon to select/build\nRight click to deselect",
+          "string": "Click izq. en icono para seleccionar / construir\nClick der. para deseleccionar",
           "font": "",
           "textAlignment": "left",
           "characterSize": 40,
@@ -1351,7 +1364,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Enemy1.png",
+                      "image": "assets\\EspañolMalo.png",
                       "points": [
                         {
                           "name": "ShotPoint",
@@ -1480,14 +1493,14 @@
         },
         {
           "assetStoreId": "5f0df6131c9646dcbe98798196db5b6d806eb25564f86d2e119a084d1e20bf74",
-          "name": "NextWaveButton",
+          "name": "Boton_prox_oleada",
           "tags": "",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
           "content": {
-            "LeftPadding": 16,
+            "LeftPadding": 18,
             "RightPadding": 16,
             "PressedLabelOffsetY": 6,
             "BottomPadding": 24,
@@ -1520,10 +1533,10 @@
               "italic": false,
               "smoothed": true,
               "underlined": false,
-              "string": "Next Wave",
+              "string": "Proxima oleada",
               "font": "ArchitectsDaughter.ttf",
               "textAlignment": "center",
-              "characterSize": 22,
+              "characterSize": 18,
               "color": {
                 "b": 0,
                 "g": 0,
@@ -1819,7 +1832,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "NextWaveButton",
+                "Boton_prox_oleada",
                 ""
               ]
             }
@@ -2313,14 +2326,14 @@
         },
         {
           "type": "BuiltinCommonInstructions::ForEach",
-          "object": "TowerHead1",
+          "object": "Canon",
           "conditions": [
             {
               "type": {
                 "value": "Distance"
               },
               "parameters": [
-                "TowerHead1",
+                "Canon",
                 "Zombie",
                 "200",
                 ""
@@ -2333,7 +2346,7 @@
                 "value": "RotateTowardPosition"
               },
               "parameters": [
-                "TowerHead1",
+                "Canon",
                 "Zombie.X()",
                 "Zombie.Y()",
                 "0",
@@ -2345,10 +2358,10 @@
                 "value": "FireBullet::FireBullet::FireTowardPosition"
               },
               "parameters": [
-                "TowerHead1",
+                "Canon",
                 "FireBullet",
-                "TowerHead1.PointX(\"BulletPoint\")",
-                "TowerHead1.PointY(\"BulletPoint\")",
+                "Canon.PointX(\"BulletPoint\")",
+                "Canon.PointY(\"BulletPoint\")",
                 "Bullet",
                 "Zombie.PointX(\"ShotPoint\")",
                 "Zombie.PointY(\"ShotPoint\")",
@@ -2472,19 +2485,7 @@
                   },
                   "parameters": [
                     "",
-                    "TowerBase",
-                    "Indicator.X()",
-                    "Indicator.Y()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "TowerHead1",
+                    "Canon",
                     "Indicator.X()",
                     "Indicator.Y()",
                     ""
@@ -2726,12 +2727,36 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
           "name": "FireBullet",
           "type": "FireBullet::FireBullet"
         },
         {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
           "name": "Health",
           "type": "Health::Health"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
         },
         {
           "name": "Tween",
