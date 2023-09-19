@@ -758,6 +758,24 @@
         "name": "Untitled0.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Corazon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Corazon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/CorazonVacio.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\CorazonVacio.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1138,14 +1156,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 32,
+          "height": 90,
           "layer": "",
           "name": "Corazones",
           "persistentUuid": "37106cef-cb35-4f2d-a7cd-37d2e839ea6d",
-          "width": 0,
-          "x": 0,
-          "y": 0,
+          "width": 192,
+          "x": 32,
+          "y": 6,
           "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
@@ -1866,7 +1885,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "UnitWidth": 90,
+            "UnitWidth": 64,
             "HideBackground": true,
             "ShowBackground": false
           },
@@ -1876,20 +1895,20 @@
               "height": 90,
               "leftMargin": 0,
               "rightMargin": 0,
-              "texture": "Flat Heart Empty.png",
+              "texture": "assets\\CorazonVacio.png",
               "tiled": false,
               "topMargin": 0,
               "width": 270
             },
             "Bar": {
-              "height": 90,
-              "texture": "Flat Heart Empty.png",
-              "width": 90
+              "height": 64,
+              "texture": "assets\\CorazonVacio.png",
+              "width": 64
             },
             "FillBar": {
-              "height": 90,
-              "texture": "Flat Heart Filled.png",
-              "width": 90
+              "height": 64,
+              "texture": "assets\\Corazon.png",
+              "width": 64
             }
           }
         },
@@ -3549,7 +3568,7 @@
           "isLocked": false,
           "name": "Pausa",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
