@@ -1247,6 +1247,67 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 736,
+          "layer": "UI",
+          "name": "FondoPausa",
+          "persistentUuid": "74dd2a02-c9a9-458a-9539-922ea281b2bb",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 54,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "BotonVolver",
+          "persistentUuid": "d26b095f-1fb6-433c-a784-9b0f4e8dfde7",
+          "width": 0,
+          "x": 576,
+          "y": 352,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "BotonSalir",
+          "persistentUuid": "8ee427c4-774b-4a9f-a3e0-fe354bcd5d26",
+          "width": 0,
+          "x": 576,
+          "y": 448,
+          "zOrder": 56,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "Pausa",
+          "persistentUuid": "cfb93dbd-c8b3-4918-a21a-a94147bbcd2a",
+          "width": 0,
+          "x": 576,
+          "y": 128,
+          "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -2333,6 +2394,26 @@
               "parameters": [
                 "Pausa"
               ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "BotonVolver",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "BotonSalir",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -3382,6 +3463,26 @@
               "parameters": [
                 "Tower1_Icon",
                 "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "BotonSalir",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "BotonVolver",
+                "yes",
                 ""
               ]
             }
