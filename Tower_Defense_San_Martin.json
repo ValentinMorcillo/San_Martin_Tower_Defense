@@ -3345,6 +3345,26 @@
                 "Pausa",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "Boton_prox_oleada",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "Tower1_Icon",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -3402,6 +3422,26 @@
                 "",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "Tower1_Icon",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "Boton_prox_oleada",
+                "yes",
+                ""
+              ]
             }
           ]
         },
@@ -3430,6 +3470,11 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
