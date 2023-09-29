@@ -776,6 +776,95 @@
         "name": "assets\\CorazonVacio.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Captura de pantalla 2023-09-29 011954.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Captura de pantalla 2023-09-29 011954.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "cannon_fire.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "cannon_fire.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "../../../../../../../Downloads/cannon_fire.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "..\\..\\..\\..\\..\\..\\..\\Downloads\\cannon_fire.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "battleThemeA.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "battleThemeA.mp3",
+        "preloadAsMusic": true,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "death pain grunts-[AudioTrimmer.com].wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "death pain grunts-[AudioTrimmer.com].wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "140382__dwoboyle__coins-01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "140382__dwoboyle__coins-01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Lively Meadow (Victory Fanfare and Song).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Lively Meadow (Victory Fanfare and Song).mp3",
+        "preloadAsMusic": true,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "battle-theme.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "battle-theme.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "game_over.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "game_over.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2414,6 +2503,18 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "battleThemeA.mp3",
+                "yes",
+                "50",
+                ""
+              ]
             }
           ]
         },
@@ -2992,6 +3093,18 @@
                     "+",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "death pain grunts-[AudioTrimmer.com].wav",
+                    "",
+                    "50",
+                    ""
+                  ]
                 }
               ]
             }
@@ -3173,6 +3286,18 @@
                     "Canon",
                     "Indicator.X()",
                     "Indicator.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "140382__dwoboyle__coins-01.wav",
+                    "",
+                    "50",
                     ""
                   ]
                 }
@@ -3593,8 +3718,32 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::HasJustFired"
+              },
+              "parameters": [
+                "Canon",
+                "FireBullet",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "cannon_fire.ogg",
+                "",
+                "50",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -3806,22 +3955,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 2,
-          "height": 719,
-          "layer": "",
-          "name": "PantallaTutorial",
-          "persistentUuid": "4ac187f0-1c5f-4cee-8a2d-b77424d7f570",
-          "width": 1288,
-          "x": 1,
-          "y": -1,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "depth": 1,
           "height": 28,
           "layer": "",
@@ -3910,6 +4043,22 @@
           "x": 48,
           "y": 644,
           "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 722,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "21886903-d57c-4175-bd76-998894bcfdc0",
+          "width": 1282,
+          "x": 0,
+          "y": -2,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4324,6 +4473,67 @@
               "width": 192
             }
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Captura de pantalla 2023-09-29 011954.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1805,
+                            "y": 0
+                          },
+                          {
+                            "x": 1805,
+                            "y": 1017
+                          },
+                          {
+                            "x": 0,
+                            "y": 1017
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -5282,6 +5492,33 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "game_over.wav",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -6200,6 +6437,33 @@
               "parameters": [
                 "",
                 "\"MainMenu\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Lively Meadow (Victory Fanfare and Song).mp3",
+                "",
+                "",
                 ""
               ]
             }
@@ -7292,6 +7556,18 @@
               },
               "parameters": [
                 "BotonAtras"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "battle-theme.wav",
+                "",
+                "50",
+                ""
               ]
             }
           ]
